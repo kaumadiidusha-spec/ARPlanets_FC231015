@@ -789,6 +789,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2670844145647564605}
   - component: {fileID: 2753478550250437586}
+  - component: {fileID: 4838329934770850954}
+  - component: {fileID: 8497988047377179372}
+  - component: {fileID: 4534518533627989922}
   m_Layer: 0
   m_Name: SolarSystem
   m_TagString: Untagged
@@ -830,6 +833,56 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TouchGestures
   minScale: 0.3
   maxScale: 3
+--- !u!64 &4838329934770850954
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475696185502577204}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!114 &8497988047377179372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475696185502577204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f66da7470dce8f4d821d71dd2b1d4ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARPlane
+  m_DestroyOnRemoval: 1
+  m_VertexChangedThreshold: 0.01
+--- !u!114 &4534518533627989922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7475696185502577204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d180956a54db4646a1c6342921672ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARPlaneMeshVisualizer
+  m_TrackingStateVisibilityThreshold: 1
+  m_HideSubsumed: 1
 --- !u!1 &8868391902827218276
 GameObject:
   m_ObjectHideFlags: 0
