@@ -268,6 +268,9 @@ GameObject:
   - component: {fileID: 224743704}
   - component: {fileID: 224743703}
   - component: {fileID: 224743702}
+  - component: {fileID: 224743705}
+  - component: {fileID: 224743706}
+  - component: {fileID: 224743707}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -340,9 +343,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlaceOnPlane
   raycastManager: {fileID: 224743701}
   objectToPlace: {fileID: 7475696185502577204, guid: 3647c375a0f97594e81540633dc7c0bd, type: 3}
-  audioSource: {fileID: 0}
-  placeSound: {fileID: 0}
-  selectSound: {fileID: 0}
+  audioSource: {fileID: 224743707}
+  placeSound: {fileID: 8300000, guid: 1cd5b30d5fdaf5644813fa9c0aaaf96b, type: 3}
+  selectSound: {fileID: 8300000, guid: fcc6b991dd2f2ec4fa5027848d70e280, type: 3}
 --- !u!114 &224743701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,6 +412,142 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARPlane
   m_DestroyOnRemoval: 1
   m_VertexChangedThreshold: 0.01
+--- !u!114 &224743705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224743696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARTrackedImageManager
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SerializedLibrary: {fileID: 11400000, guid: 0f6f91474369e6143879a9b21007fe7b, type: 2}
+  m_MaxNumberOfMovingImages: 2
+  m_TrackedImagePrefab: {fileID: 0}
+--- !u!114 &224743706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224743696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9a884720284a341a09bde1caa9a0e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ImageTracker
+  trackedImageManager: {fileID: 224743705}
+  imagePrefabs:
+  - imageName: Earth
+    prefab: {fileID: 3725409283748358909, guid: 197cff62709c3d0408c5fb15668cd61f, type: 3}
+  - imageName: Mars
+    prefab: {fileID: 3725409283748358909, guid: 5d1d554fab578824c9e96aa29ec5b3ca, type: 3}
+  heightAboveImage: 0.05
+  audioSource: {fileID: 224743707}
+  foundSound: {fileID: 8300000, guid: 2ca2029f81994a34393e85b595e4fb15, type: 3}
+--- !u!82 &224743707
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224743696}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &230160545
 GameObject:
   m_ObjectHideFlags: 0

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1366
     height: 685
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 47
+  controlID: 114
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -93,7 +93,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 257
+    width: 256
     height: 373
   m_MinSize: {x: 201, y: 226}
   m_MaxSize: {x: 4001, y: 4026}
@@ -267,9 +267,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 257
+    x: 256
     y: 0
-    width: 783
+    width: 784
     height: 373
   m_MinSize: {x: 202, y: 226}
   m_MaxSize: {x: 4002, y: 4026}
@@ -594,7 +594,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Icon
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 62
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Icon
   m_LastFoldersGridSize: 62
   m_LastProjectPath: C:\Users\User\Documents\GitHub\ARPlanets_FC231015\ARPlanets_FC231015
   m_LockTracker:
@@ -613,14 +613,14 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 68.09998}
     m_SelectedIDs:
-    - m_Data: 51926
+    - m_Data: 51994
     m_LastClickedID:
-      m_Data: 51926
+      m_Data: 51994
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51828
-    - m_Data: 51830
-    - m_Data: 51832
+    - m_Data: 51902
+    - m_Data: 51904
+    - m_Data: 51906
     - m_Data: 1000000000
     - m_Data: 2147483647
     m_RenameOverlay:
@@ -655,9 +655,9 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 51828
-    - m_Data: 51830
-    - m_Data: 51832
+    - m_Data: 51902
+    - m_Data: 51904
+    - m_Data: 51906
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -763,7 +763,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 492
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -792,7 +792,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 79
-    width: 256
+    width: 255
     height: 347
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -814,33 +814,20 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -21056
-      - m_Data: -20798
-      - m_Data: -19826
-      - m_Data: -16364
-      - m_Data: -16108
-      - m_Data: -15222
-      - m_Data: -11676
-      - m_Data: -11406
-      - m_Data: -10430
-      - m_Data: -5032
-      - m_Data: -4760
-      - m_Data: -3792
+      - m_Data: -13800
+      - m_Data: -13544
+      - m_Data: -12616
+      - m_Data: -8226
+      - m_Data: -7970
+      - m_Data: -6990
+      - m_Data: -3542
+      - m_Data: -3286
+      - m_Data: -2306
       - m_Data: -1340
-      - m_Data: 56626
-      - m_Data: 56694
-      - m_Data: 57278
-      - m_Data: 57354
-      - m_Data: 57412
-      - m_Data: 57422
-      - m_Data: 57968
-      - m_Data: 58036
-      - m_Data: 58896
-      - m_Data: 58964
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: CloseButton
-        m_OriginalName: CloseButton
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
@@ -848,10 +835,10 @@ MonoBehaviour:
           width: 0
           height: 0
         m_UserData:
-          m_Data: 58848
+          m_Data: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
         m_ClientGUIView: {fileID: 4}
@@ -1426,9 +1413,9 @@ MonoBehaviour:
     m_TextWithWhitespace: "Game\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 257
+    x: 256
     y: 79
-    width: 781
+    width: 782
     height: 347
   m_SerializedDataModeController:
     m_DataMode: 0
@@ -1449,7 +1436,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 781, y: 326}
+  m_TargetSize: {x: 782, y: 326}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -1464,8 +1451,8 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -390.5
-    m_HBaseRangeMax: 390.5
+    m_HBaseRangeMin: -391
+    m_HBaseRangeMax: 391
     m_VBaseRangeMin: -163
     m_VBaseRangeMax: 163
     m_HAllowExceedBaseRangeMin: 1
@@ -1485,23 +1472,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 781
+      width: 782
       height: 326
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 390.5, y: 163}
+    m_Translation: {x: 391, y: 163}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -390.5
+      x: -391
       y: -163
-      width: 781
+      width: 782
       height: 326
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 781, y: 347}
+  m_LastWindowPixelSize: {x: 782, y: 347}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
